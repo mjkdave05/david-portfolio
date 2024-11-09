@@ -26,7 +26,7 @@ const Stats = () => {
                     return (
                         <div 
                             className="flex-1 flex gap-4 items-center justify-center
-                            xl:justify-start" 
+                            " 
                             key={index}
                         >
                             <CountUp
