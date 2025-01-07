@@ -17,7 +17,7 @@ import {
 const about = {
   title: "About me",
   description:
-  "",
+  "Here are my contact info",
   info: [
     {
       fieldName: "Name",
@@ -50,22 +50,22 @@ const about = {
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
-  description: "",
+  description: "Here is a list of cpmanies I have worked with.",
   items: [
     {
-      company: "Tech",
-      position: "Frontend",
-      duration: "2023"
+      company: "Zidio Development",
+      position: "Mobile Developer Intern",
+      duration: "September 2024 - November 2024"
     },
     {
-      company: "Tech",
-      position: "Frontend",
-      duration: "2023"
+      company: "ScholarshipIQ",
+      position: "Campus Ambasador",
+      duration: "October 2023 - April 2024"
     },
     {
-      company: "Tech",
-      position: "Frontend",
-      duration: "2023"
+      company: "Ulevel Technology",
+      position: "Frontend Developer Intern",
+      duration: "April 2023 - September 2023"
     },
   ]
 };
@@ -74,12 +74,12 @@ const experience = {
 const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
-  description: "",
+  description: "Here is my educational background",
   items: [
     {
       institution: "Landmark University",
-      degree: "Frontend",
-      duration: "2023"
+      degree: "B.Sc. Computer Science",
+      duration: "2020-2024"
     },
   ]
 };
@@ -87,7 +87,7 @@ const education = {
 // skills data
 const skills = {
   title: "My skills",
-  description: "",
+  description: "This are the list of skills i am experienced in",
   skilllist: [
     {
       icon: <FaHtml5 />,

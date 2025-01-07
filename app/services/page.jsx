@@ -8,13 +8,13 @@ const services = [
     num: "01",
     title: "Mobile Development",
     description: "Discover various mobile applications built using Flutter, each of the mobile application was designed with a focus on usability, performance, and seamless interaction.",
-    href:""
+    href:"/app/services/mobile_dev" 
   },
   {
     num: "02",
     title: "Web Development",
     description: "Discover web projects that demonstrate my commitment to creating responsive, engaging, and highly functional websites using React and Tailwind CSS.",
-    href:""
+    href:"/app/services/web", 
   },
 ];
 
