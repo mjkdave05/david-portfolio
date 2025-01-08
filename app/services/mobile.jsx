@@ -1,5 +1,6 @@
 "use client";
 
+
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 
@@ -15,7 +16,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-//import Link from "next/link";
+import Link from "next/link";
 import Image from "next/image";
 import WorkSliderBtns from "@/components/ui/WorkSliderBtns";
 
