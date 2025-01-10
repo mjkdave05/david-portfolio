@@ -22,13 +22,13 @@ import WorkSliderBtns from "@/components/ui/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
+    category: "Mobile Development",
     title: "project 1",
     description: "",
-    stack: [{ name: "Html 5"}, {name: "Css 3"}],
-    image: "/",
-    live: "",
-    github: "",
+    stack: [{ name: "Dart"}, {name: "Flutter"}, {name: "Riverpod"}],
+    image: "/assets/work/e-commerce.png",
+    // live: "",
+    github: "https://github.com/mjkdave05/ecommerce_app.git",
   },
   {
     num: "02",
@@ -37,7 +37,7 @@ const projects = [
     description: "",
     stack: [{ name: "Html 5"}, {name: "Css 3"}],
     image: "/",
-    live: "",
+    // live: "",
     github: "",
   },
   {
@@ -47,7 +47,7 @@ const projects = [
     description: "",
     stack: [{ name: "Dart"}, {name: "Flutter"}],
     image: "/assets/work/realestate.png",
-    live: "",
+    // live: "",
     github: "",
   },
   {
@@ -57,7 +57,7 @@ const projects = [
     description: "",
     stack: [{ name: "Html 5"}, {name: "Css 3"}],
     image: "/",
-    live: "",
+    // live: "",
     github: "",
   }
 ];
@@ -115,7 +115,7 @@ const Work = () => {
               <div className="flex items-center gap-4">
 
                {/** live project button */}
-                <Link href={project.live}>
+                {/* <Link href={project.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex
@@ -128,10 +128,10 @@ const Work = () => {
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
-                </Link>
+                </Link> */}
 
                 {/** github project button */}
-                <Link href={project.github}>
+                <Link target="_blank" href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex
@@ -158,17 +158,26 @@ const Work = () => {
               {projects.map((project, index) =>{
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                    <div className="relative flex justify-center items-center bg-pink-50/20" style={{ height: "600px" }}>
                       {/** overlay */}
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {/** image */}
-                      <div className="relative w-full h-full">
-                        <Image src={project.image} fill className="object-cover" alt="" />
+                      <div className="relative w-full h-full max-w-[320px] max-h-[800px]">
+                        <Image
+                          src={project.image}
+                          layout="responsive"
+                          width={350} // Width of the image container
+                          height={800} // Height of the image container
+                          className="object-contain rounded-lg"
+                          alt="Project Image"
+                        />
                       </div>
                     </div>
                   </SwiperSlide>
-                );
-              })}
+
+
+                  );
+                })}
               {/* slider buttons*/}
               <WorkSliderBtns 
                 containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 
