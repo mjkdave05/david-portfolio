@@ -24,7 +24,7 @@ const projects = [
     num: "01",
     category: "Mobile Development",
     title: "project 1",
-    description: "",
+    description: "A sleek and user-friendly eCommerce app built with Flutter and Riverpod, featuring smooth navigation, dynamic product listings. Showcasing expertise in creating responsive and efficient mobile solutions.",
     stack: [{ name: "Dart"}, {name: "Flutter"}, {name: "Riverpod"}],
     image: "/assets/work/e-commerce.png",
     // live: "",
@@ -32,13 +32,13 @@ const projects = [
   },
   {
     num: "02",
-    category: "mobile",
+    category: "Mobile Development",
     title: "project 2",
     description: "",
     stack: [{ name: "Html 5"}, {name: "Css 3"}],
-    image: "/",
+    image: "/assets/work/realestate.png",
     // live: "",
-    github: "",
+    github: "https://github.com/mjkdave05/Real-Estate-App.git",
   },
   {
     num: "03",
@@ -158,16 +158,16 @@ const Work = () => {
               {projects.map((project, index) =>{
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="relative flex justify-center items-center bg-pink-50/20" style={{ height: "600px" }}>
+                    <div className="relative rounded-2xl flex justify-center items-center bg-white/5" style={{ height: "600px" }}>
                       {/** overlay */}
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {/** image */}
-                      <div className="relative w-full h-full max-w-[320px] max-h-[800px]">
+                      <div className="relative w-full h-full max-w-[250px] max-h-[600px]">
                         <Image
                           src={project.image}
                           layout="responsive"
-                          width={350} // Width of the image container
-                          height={800} // Height of the image container
+                          width={300} 
+                          height={500}
                           className="object-contain rounded-lg"
                           alt="Project Image"
                         />

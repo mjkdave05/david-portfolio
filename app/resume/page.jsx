@@ -16,8 +16,9 @@ import {
 
 const about = {
   title: "About me",
-  description:
-  "Here are my contact info",
+  description: `I'm a passionate Flutter developer with a passion for building sleek and functional mobile applications with over a year of experience in crafting user-friendly apps, I thrive on solving problems and turning ideas into impactful digital experiences.
+
+  Let’s connect and build something amazing together!`,
   info: [
     {
       fieldName: "Name",
@@ -43,15 +44,21 @@ const about = {
       fieldName: "Language",
       fieldValue: "English, Yoruba",
     },
-  ]
+  ],
 };
+
 
 // experience data
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
-  description: "Here is a list of cpmanies I have worked with.",
+  description: "Below is a list of companies I've had the privilege to work with, gaining valuable experience along the way.",
   items: [
+    {
+      company: "Uleval Technology",
+      position: "Mobile Developer",
+      duration: "November 2024 - Till Date"
+    },
     {
       company: "Zidio Development",
       position: "Mobile Developer Intern",
@@ -74,7 +81,7 @@ const experience = {
 const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
-  description: "Here is my educational background",
+  description: "Educational Qualification",
   items: [
     {
       institution: "Landmark University",
@@ -87,7 +94,7 @@ const education = {
 // skills data
 const skills = {
   title: "My skills",
-  description: "This are the list of skills i am experienced in",
+  description: "Here are the skills I have experience with.",
   skilllist: [
     {
       icon: <FaHtml5 />,
@@ -263,24 +270,28 @@ const Resume = () => {
 
 
              {/** about */}
-              <TabsContent value="about" className="w-full text-center xl:text-left">
-                  <div className="flex flex-col gap-[30px]">
-                    <h3 className="text-4xl font-bold">{about.title}</h3>
-                    <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                      {about.description}
-                    </p>
-                    <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
-                      {about.info.map((item, index) => {
-                        return (
-                          <li key={index} className="flex items-center justify-center xl:justify-start gap-4">
-                            <span className="text-white/60">{item.fieldName}</span>
-                            <span className="text-xl">{item.fieldValue}</span>
-                          </li>
-                        )
-                      })}
-                    </ul>
-                  </div>
-              </TabsContent>
+             <TabsContent value="about" className="w-full text-center xl:text-left">
+              <div className="flex flex-col gap-[30px]">
+                <h3 className="text-4xl font-bold">{about.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 whitespace-pre-line">
+                  {about.description}
+                </p>
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                  {about.info.map((item, index) => {
+                    return (
+                      <li
+                        key={index}
+                        className="flex items-center justify-center xl:justify-start gap-4"
+                      >
+                        <span className="text-white/60">{item.fieldName}</span>
+                        <span className="text-xl">{item.fieldValue}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            </TabsContent>
+
 
 
           </div>
