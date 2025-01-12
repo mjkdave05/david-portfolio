@@ -19,6 +19,8 @@ import Link from "next/link";
 import Image from "next/image";
 import WorkSliderBtns from "@/components/ui/WorkSliderBtns";
 
+
+
 const projects = [
   {
     num: "01",
@@ -67,7 +69,7 @@ const projects = [
   //   description: "",
   //   stack: [{ name: "Html 5"}, {name: "Css 3"}],
   //   image: "/",
-  //   ie live: "",
+  //   live: "",
   //   github: "/",
   // }
 ];
