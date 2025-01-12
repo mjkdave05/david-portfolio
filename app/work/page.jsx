@@ -34,26 +34,36 @@ const projects = [
     num: "02",
     category: "Mobile Development",
     title: "project 2",
-    description: "",
-    stack: [{ name: "Html 5"}, {name: "Css 3"}],
-    image: "/assets/work/realestate.png",
+    description: "Contributed to a robust video conferencing app built with Flutter and Firebase, enabling seamless virtual meetings with features like real-time video, chat, and user-friendly interfaces. Demonstrates expertise in building reliable and engaging communication solutions.",
+    stack: [{ name: "Dart"}, {name: "Flutter"}, {name: "Firebase"}],
+    image: "/assets/work/conferencing_app.png",
     // live: "",
-    github: "https://github.com/mjkdave05/Real-Estate-App.git",
+    github: "https://github.com/mjkdave05/video_confrence_app.git",
   },
   {
     num: "03",
     category: "Mobile Development",
     title: "project 3",
-    description: "",
-    stack: [{ name: "Dart"}, {name: "Flutter"}],
-    image: "/assets/work/realestate.png",
+    description: "Contributed to a powerful real-time collaboration tool built with Flutter and Firebase, featuring user authentication, real-time document editing, task management, project timeline and gant charts, notifications, instant updates, and seamless teamwork. Highlights expertise in creating efficient and interactive productivity solutions.",
+    stack: [{ name: "Dart"}, {name: "Flutter"}, {name: "Firebase"}],
+    image: "/assets/work/collaboration_tool.png",
     // live: "",
-    github: "",
+    github: "https://github.com/unawarexi/Flutter_Realtime_Workspace.git",
   },
   {
     num: "04",
-    category: "frontend",
+    category: "Mobile Development",
     title: "project 4",
+    description: "A modern real estate app built with Flutter, designed for seamless property browsing, and smooth user interactions. Showcasing expertise in creating intuitive and scalable mobile solutions",
+    stack: [{ name: "Dart"}, {name: "Flutter"}],
+    image: "/assets/work/realestate.png",
+    // live: "",
+    github: "https://github.com/mjkdave05/Real-Estate-App.git",
+  },
+  {
+    num: "05",
+    category: "frontend",
+    title: "project 5",
     description: "",
     stack: [{ name: "Html 5"}, {name: "Css 3"}],
     image: "/",
@@ -162,11 +172,11 @@ const Work = () => {
                       {/** overlay */}
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {/** image */}
-                      <div className="relative w-full h-full max-w-[250px] max-h-[600px]">
+                      <div className="relative w-full h-full min-w[500px] min-h-[600px] max-w-[250px] max-h-[650px]">
                         <Image
                           src={project.image}
                           layout="responsive"
-                          width={300} 
+                          width={400} 
                           height={500}
                           className="object-contain rounded-lg"
                           alt="Project Image"
