@@ -60,16 +60,16 @@ const projects = [
     // live: "",
     github: "https://github.com/mjkdave05/Real-Estate-App.git",
   },
-  {
-    num: "05",
-    category: "frontend",
-    title: "project 5",
-    description: "",
-    stack: [{ name: "Html 5"}, {name: "Css 3"}],
-    image: "/",
-    // live: "",
-    github: "",
-  }
+  // {
+  //   num: "05",
+  //   category: "frontend",
+  //   title: "project 5",
+  //   description: "",
+  //   stack: [{ name: "Html 5"}, {name: "Css 3"}],
+  //   image: "/",
+  //   // live: "",
+  //   github: "/",
+  // }
 ];
 
 const Work = () => {
